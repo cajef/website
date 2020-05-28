@@ -1,0 +1,15 @@
+body {
+  background: rgb(224, 224, 224);
+}
+
+#intro {
+  background: rgb(178, 178, 219);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#two {
+  background: rgb(181, 255, 239);
+  min-height: 100vh;
+  min-width: 100vw;
+}
