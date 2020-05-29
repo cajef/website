@@ -9,17 +9,26 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-header {
-    font-family: 'Raleway', sans-serif;
-    color: var(--green);
-
+.jumbotron {
+    font-family: 'Raleway', sans-serif;    
+    background: url("../images/orphan.jpg");
     min-height: 100vh;
     min-width: 100vw;
 }
 
+.jumbotron h1 {
+    color: var(--green);
+    font-size: 5rem;
+}
+
+.jumbotron a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 1em 2em;
+}
+
 .btn {
     border-radius: 50px;
-    width: 6em;
 }
 
 .ong-red {
