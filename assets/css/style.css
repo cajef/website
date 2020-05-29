@@ -40,3 +40,12 @@ body {
     background-color: var(--red);
     border-color: transparent;
 } 
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.social {
+    font-size: 3em;
+}
