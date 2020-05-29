@@ -44,7 +44,6 @@ body {
 
 section {
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 .social {
@@ -62,8 +61,14 @@ section {
     background-color: var(--blue);
     color: white;
     min-height: 10vh;
+    padding: 4em;
 }
 
 .help h1 {
+    font-weight: bold;
+}
+
+.help a {
+    padding: 1em;
     font-weight: bolder;
 }
