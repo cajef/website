@@ -87,5 +87,19 @@ section {
 }
 
 footer {
-    
+    background-color: var(--green);
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+}
+
+footer i {
+    font-size: 3em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
 }
