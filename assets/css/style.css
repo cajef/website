@@ -3,6 +3,7 @@
 :root {
     --red: #eb5757;
     --green: #aad037;
+    --blue: #229cd7;
 }
 
 body {
@@ -48,4 +49,21 @@ section {
 
 .social {
     font-size: 3em;
+}
+
+.parceiro {
+    width: 8em;
+    height: 8em;
+    background-color: grey;
+    margin: 1em 4em;
+}
+
+.help {
+    background-color: var(--blue);
+    color: white;
+    min-height: 10vh;
+}
+
+.help h1 {
+    font-weight: bolder;
 }
