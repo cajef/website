@@ -153,6 +153,7 @@ section .row {
 
 .social a{
     color: var(--grey);
+    text-decoration: none;
 }
 
 .team {
