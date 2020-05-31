@@ -153,6 +153,7 @@ section .row {
 
 .social a{
     color: var(--grey);
+    text-decoration: none;
 }
 
 .team {
@@ -197,7 +198,10 @@ section h1 {
     color: var(--green); 
     font-weight: 900;
     font-size: 2.5em;
-    padding-bottom: 1em;
+}
+
+#nos-ajude h1 {
+    color: var(--white); 
 }
 
 section h2 {
