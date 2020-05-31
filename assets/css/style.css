@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-
+    background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav .btn {
     background-color: transparent;
     background-size: 100%;
     min-height: 80vh;
-    min-width: 100vw;
+    width: 98vw;
     padding: 5em 5em;
     display: flex;
     align-items: center;
@@ -64,7 +65,11 @@ nav .btn {
     .jumbotron{
         background-size: 200%;
         background-position: 50%;
+    }
+
+    section .row {
         text-align: center;
+        padding: 5em;
     }
 }
 
@@ -74,7 +79,18 @@ nav .btn {
     }
 
     .jumbotron h1 {
-        font-size: 2.5em;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    section .row {
+        text-align: center;
+        padding: 2em;
+    }
+
+    .team {
+        position: relative;
+        left: -7em;
     }
 }
 
@@ -119,8 +135,55 @@ nav .btn {
 } 
 
 section {
+    margin-top: 5em;
     min-height: 100vh;
-    padding: 0 30em;
+    padding: 0em 300em;
+}
+
+section .row {
+    padding: 5em;
+}
+
+.social a{
+    color: var(--grey);
+}
+
+.team {
+    background: url('../images/team.jpg');
+    background-size: 150%;
+    width: 30em ;
+    height: 30em;
+    margin: auto;
+}
+
+.green-box{
+    border: 3px solid var(--green);
+    width: 30em;
+    height: 30em;
+    position: relative;
+    top: 10%;
+    left: 15%;
+    z-index: -1;
+}
+
+.yellow-detail{
+    position: relative;
+    left: 40%;
+    bottom: 30%;
+    z-index: -10;
+}
+
+.blue-detail{
+    position: absolute;
+    z-index: -10;
+    left: 0;
+}
+
+
+.pink-detail{
+    position: absolute;
+    z-index: -10;
+    right: 0;
 }
 
 section h1 {
@@ -145,21 +208,27 @@ section p {
 }
 
 .parceiro {
-    width: 8em;
-    height: 8em;
+    width: 10em;
+    height: 10em;
     background-color: grey;
     margin: 1em 4em;
 }
 
 .help {
-    background-color: var(--blue);
+    background: linear-gradient(180deg, #3696C6 6.45%, #40D8CF 145.16%), #229CD7;
     color: white;
     min-height: 10vh;
-    padding: 4em;
+    padding:    4em;
 }
 
 .help h1 {
     font-weight: bolder;
+}
+
+.help p {
+    margin: 1em 0;
+    font-weight: bold;
+    text-align: center;
 }
 
 .help a {
@@ -171,8 +240,22 @@ section p {
     font-weight: bold;
 }
 
+
+#fale p {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+#fale .form-group {
+    text-align: left;
+}
+
 #fale {
-    width: 50%;
+    text-align: left;
+    max-width: 45em;
 }
 
 #fale button {
@@ -180,12 +263,18 @@ section p {
 }
 
 footer {
-    background-color: var(--green);
+    background-color: #aad037;
     min-height: 25vh;
     display: flex;
     align-items: center;
     vertical-align: middle;
     color: white;
+    margin-top: 5em;
+}
+
+footer svg{
+    z-index: -10;
+    width: 100vw;
 }
 
 footer i {
@@ -199,4 +288,8 @@ footer .container {
 
 .logo {
     width: 5em;
+}
+
+form .row{
+    padding: 0;
 }
