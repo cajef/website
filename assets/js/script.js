@@ -156,27 +156,27 @@ Vue.component('Contact', {
               </p>  
             </div>
             <div class="card-text text-left">
-              <form>
+              <form id="contato">
                 <div class="container">
                   <div class="row">
                     <div class="col-md">
                       <div class="form-group">
                         <label for="exampleFormControlInput1">Nome:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <input type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="">
                       </div>
                     </div>
                     <div class="col-md">
                       <div class="form-group">
                         <label for="exampleFormControlInput1">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <input type="email" name="user_email" class="form-control" id="exampleFormControlInput1" placeholder="">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="exampleFormControlInput1">Email:</label>
-                    <textarea class="form-control" name="" id="" rows="5" placeholder="Digite aqui a sua mensagem"></textarea>
+                    <label for="exampleFormControlInput1">Mensagem:</label>
+                    <textarea class="form-control" name="message" rows="5" placeholder="Digite aqui a sua mensagem"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="submit" class="btn btn-primary" value="Send">Enviar</button>
                 </div>
               </form>  
             </div>
