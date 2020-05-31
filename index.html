@@ -4,20 +4,27 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init("user_rkE1MNJCyR7FSHUNPnDVx");
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function() {
-      document.getElementById('contato').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // generate the contact number value
-        this.contact_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm('contact_service', 'contact_form', this);
-      });
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      let name = document.querySelector("form [name=name]").value
+      let email = document.querySelector("form [name=email]").value
+      let message = document.querySelector("form [name=message]").value
+      console.log(
+        name,email,message
+      )
+
+      Email.send({
+      Host: "smtp.gmail.com",
+      Username : 'ong.cajef@gmail.com',
+      Password : 'cajef2020',
+      To : 'ong.cajef@gmail.com',
+      From : email,
+      Subject : "Contato",
+      Body : message,
+      }).then(
+        message => window.location.reload()
+      );
     }
   </script>
   
@@ -165,18 +172,19 @@
             </div>
             <div class="card-text text-left">
               <form id="contato">
+                <input type="hidden" name="contact_number">
                 <div class="container">
                   <div class="row">
                     <div class="col-md">
                       <div class="form-group">
                         <label for="exampleFormControlInput1">Nome:</label>
-                        <input type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="">
                       </div>
                     </div>
                     <div class="col-md">
                       <div class="form-group">
                         <label for="exampleFormControlInput1">Email:</label>
-                        <input type="email" name="user_email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                       </div>
                     </div>
                   </div>
@@ -184,7 +192,7 @@
                     <label for="exampleFormControlInput1">Mensagem:</label>
                     <textarea class="form-control" name="message" rows="5" placeholder="Digite aqui a sua mensagem"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary" value="Send">Enviar</button>
+                  <button type="button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">Enviar</button>
                 </div>
               </form>  
             </div>
