@@ -15,6 +15,9 @@ body {
 
 nav {
     font-weight: bold;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 100;
 }
 
 nav ul li {
@@ -42,10 +45,10 @@ nav .btn {
         url("../images/mainimageong.jpg ") no-repeat;
 
     background-color: transparent;
-    background-size: 100%;
+    background-size: 130%;
     min-height: 80vh;
     width: 98vw;
-    padding: 5em 5em;
+    padding: 7em 5em;
     display: flex;
     align-items: center;
 }
@@ -70,6 +73,11 @@ nav .btn {
     section .row {
         text-align: center;
         padding: 5em;
+    }
+
+    nav ul li a{
+        font-size: 1.2em;
+        margin: auto;
     }
 }
 
@@ -99,11 +107,7 @@ nav .btn {
     .jumbotron{
         background-size: 400%;
         background-position: 50%;
-        text-align: center;
-    }
-  }
-
-@media only screen and (max-width: 530px) {
+    border-radius: 50%;30px) {
     .jumbotron {
         background-size: 300%;
         background-position: 50%;
@@ -117,6 +121,9 @@ nav .btn {
   }
 */
 
+#parcerias, #fale{
+    padding: 10em 0;
+}
 
 
 .btn {

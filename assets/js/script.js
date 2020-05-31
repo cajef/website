@@ -1,6 +1,6 @@
 Vue.component('Navbar',{
     template: /*html*/`
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
         <div class="navbar-brand">
             <img src="./assets/images/Cajef_Logo.png" class="logo"/>
         </div>
@@ -11,17 +11,17 @@ Vue.component('Navbar',{
         
         <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Sobre</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#about">Sobre</a>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Parceiros</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#parcerias">Parceiros</a>
         </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#">Contatos</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#fale">Contatos</a>
         </li>
         <li>
             <Donate></Donate>
@@ -34,9 +34,10 @@ Vue.component('Navbar',{
 
 Vue.component('Hero',{
     template: /*html*/`
-    <header id="#home">
+    <header id="home">
     <div class="jumbotron">
     <div class="big">
+    <br/><br/><br/>
     <h1>CAGEF</h1>
     <h1>CENTRO DE</h1>
     <h1>ATENÇÃO AO</h1>
