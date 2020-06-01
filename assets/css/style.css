@@ -149,6 +149,11 @@ footer i {
   font-size: 3em;
 }
 
+.social-footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 830px) {
   .logo {
     width: 3em;
