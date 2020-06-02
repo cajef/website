@@ -139,9 +139,13 @@ section {
   font-weight: bolder;
 }
 
+div.modal-header {
+  border-bottom: 0px;
+}
+
 #section-modal-title {
   width: 603px;
-  height: 49px;
+  height: 20px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 900;
@@ -150,6 +154,11 @@ section {
   text-align: center;
   text-transform: uppercase;
   color: #AAD037;
+}
+
+#btn-send {
+  width: 100px;
+  height: 40px;
 }
 
 footer {
