@@ -79,10 +79,12 @@
           <a class="nav-link" href="#fale">Contatos</a>
         </li>
         <li>
-          <a href="#" class="btn btn-primary btn-block ong-red"> 
+          <a href="#" class="btn btn-primary btn-block ong-red" data-toggle="modal" data-target="#doar"> 
             <i class="fas fa-heart"></i>
             Quero Doar
           </a>
+
+          
         </li>
       </ul>
     </div>
@@ -102,7 +104,7 @@
             <b style="color: var(--green)">JOVEM FELIZ</b>
             </h1>
             <div style="margin: 2em;">
-              <a href="#" class="btn ong-red" style="color: white;"> 
+              <a href="#" class="btn ong-red" style="color: white;" data-toggle="modal" data-target="#voluntario"> 
                 <i class="fas fa-hands-helping"></i>
                 Seja Voluntário
               </a>  
@@ -326,6 +328,7 @@
     </section>
   </main>
 
+    
   <footer class="container-full mt-5">
     <div class="row pt-5">
       <div class="social-footer col col-md-2 ml-5">
@@ -342,6 +345,121 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="doar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">APOIE NOSSA CAUSA E TRANSFORME VIDAS!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card-text text-left">
+            <form id="contato">
+              <input type="hidden" name="contact_number">
+              <div class="container">
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome:</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                
+
+                <div class="row">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">E-mail:</label>
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Telefone:</label>
+                      <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">O que você pode doar?</label>
+                  <textarea class="form-control" name="message" rows="2" placeholder="Ex: Alimentos, cesta básica, produtos de higiene..."></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">Enviar</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="voluntario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SEJA UM VOLUNTÁRIO DO CAJEF</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card-text text-left">
+            <form id="contato">
+              <input type="hidden" name="contact_number">
+              <div class="container">
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome:</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                
+
+                <div class="row">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">E-mail:</label>
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Telefone:</label>
+                      <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Por que razão você deseja se tornar um voluntário?</label>
+                  <textarea class="form-control" name="message" rows="1" placeholder="Sua resposta"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Em que você pode colaborar?</label>
+                  
+                  <textarea class="form-control" name="message" rows="2" placeholder="Comente suas Habilidades e/ou Experiências com trabalho voluntário..."></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">Enviar</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -349,3 +467,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
 </body>
 </html> 
+
+
+
+
+
+
