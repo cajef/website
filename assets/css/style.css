@@ -139,6 +139,19 @@ section {
   font-weight: bolder;
 }
 
+#section-modal-title {
+  width: 603px;
+  height: 49px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #AAD037;
+}
+
 footer {
   background-color: #aad037;
   min-height: 20vh;
