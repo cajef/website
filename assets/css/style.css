@@ -181,3 +181,17 @@ footer i {
     font-size: 2.1em;
   }
 }
+
+.atividade * {
+    display: block;
+    text-align: center;
+}
+
+.atividade img {
+    width: 8em;
+    height: 8em;
+}
+
+.atividade svg {
+    fill: white;
+}
