@@ -112,9 +112,11 @@ section {
 }
 
 .img-parceiros {
-  width: 10em;
-  height: 10em;
-  background-color: grey;
+  max-height: 10em;
+}
+
+.img-galeria {
+  max-height: 8em;
 }
 
 #nos-ajude {
@@ -156,6 +158,16 @@ div.modal-header {
   color: #AAD037;
 }
 
+#section-modal-title-doe {
+  font-family: Nunito;
+  text-align: center;
+  font-weight: 900;
+  margin-left: 15%;
+  color: #AAD037;
+}
+
+
+
 #btn-send {
   width: 100px;
   height: 40px;
@@ -172,8 +184,8 @@ footer i {
 }
 
 .social-footer a {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 830px) {
@@ -204,16 +216,11 @@ footer i {
   }
 }
 
-.atividade * {
-    display: block;
-    text-align: center;
-}
-
 .atividade img {
-    width: 8em;
-    height: 8em;
+  width: 8em;
+  height: 8em;
 }
 
 .atividade svg {
-    fill: white;
+  fill: white;
 }
