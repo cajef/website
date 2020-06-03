@@ -34,7 +34,7 @@ function sendEmail(id, subject) {
         <dl>
           <dt>Nome: </dt><dd>${name}</dd>
           <dt>Email: </dt><dd>${email}</dd>
-          <dt>Telefone: </dt><dd>${email}</dd>
+          <dt>Telefone: </dt><dd>${phone}</dd>
         </dl>
         <p>Como posso ajudar?</p>
         <p>
@@ -49,7 +49,7 @@ function sendEmail(id, subject) {
       <dl>
         <dt>Nome: </dt><dd>${name}</dd>
         <dt>Email: </dt><dd>${email}</dd>
-        <dt>Telefone: </dt><dd>${email}</dd>
+        <dt>Telefone: </dt><dd>${phone}</dd>
       </dl>
       <p>O que posso doar?</p>
       <p>
