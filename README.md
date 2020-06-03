@@ -14,3 +14,19 @@ Nosso trabalho também tem como objetivo a inserção e permanência dos jovens 
 - **fonteawesome** para a importação de ícones
 - **jquery** para o funcionamento da navbar, embutido 
 - **google tag manager** para a futura adição de diversos recursos de marketing digital
+
+## Sobre a equipe de desenvolvimento
+- **Walter** 
+  - responsável pelo envio de e-mails
+  - estruturação do site
+  - aplicação "crua" do design
+  
+- **Elisabeth**
+  - responsável por tornar o design responsivo
+  - trabalhar mais profundamente no design
+  - mudanças necessárias na página ao longo do projeto
+  
+- **Sílvia**
+  - responsável pela organização do projeto
+  - pelo relatório e documentação do projeto
+  - mudanças necessárias na página ao longo do projeto
