@@ -79,10 +79,12 @@
           <a class="nav-link" href="#fale">Contatos</a>
         </li>
         <li>
-          <a href="#" class="btn btn-primary btn-block ong-red"> 
+          <a href="#" class="btn btn-primary btn-block ong-red" data-toggle="modal" data-target="#doar"> 
             <i class="fas fa-heart"></i>
             Quero Doar
           </a>
+
+          
         </li>
       </ul>
     </div>
@@ -101,8 +103,9 @@
             <br/>
             <b style="color: var(--green)">JOVEM FELIZ</b>
             </h1>
+            
             <div style="margin: 2em;">
-              <a href="#" class="btn ong-red" style="color: white;"> 
+              <a href="#" class="btn ong-red" style="color: white;" data-toggle="modal" data-target="#voluntario"> 
                 <i class="fas fa-hands-helping"></i>
                 Seja Voluntário
               </a>  
@@ -131,7 +134,7 @@
             <a class="mr-3" href="https://instagram.com/ongcajef?igshid=bnirq3bswtly" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-            <a class="mr-3" href="https://www.facebook.com/ong.cajef" target="_blank">
+            <a class="mr-3" href="https://www.facebook.com/CAJEF-Centro-de-Aten%C3%A7%C3%A3o-ao-Jovem-Espa%C3%A7o-Feliz-106997394374338" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
           </div>
@@ -167,34 +170,64 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="cajef" role="tabpanel" aria-labelledby="cajef">
-            <div class="row">
+            <div class="row mt-5">
               <!-- CAJEF  (copie e cole o codigo abaixo para cada nova imagem) -->
               <div class="col-3">
-                <img src="./assets/images/logoexample.png" alt="logo" class="img-parceiros mb-5"> 
+                <img src="./assets/images/logoexample.png" alt="logo" class="img-galeria mb-5"> 
               </div>
             </div>
           </div>
           <div class="tab-pane fade show" id="talentos" role="tabpanel" aria-labelledby="talentos">
-            <div class="row">
+            <div class="row mt-5">
               <!-- CAJEF  (copie e cole o codigo abaixo para cada nova imagem) -->
-              <div class="col-3">
-                <img src="./assets/images/logoexample.png" alt="logo" class="img-parceiros mb-5"> 
+              <div class="col-md-3">
+                <img src="./assets/images/luta.jpg" alt="luta" class="img-galeria mb-5 img-fluid"> 
               </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/crianca.jpg" alt="crianças" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/natacao.jpeg" alt="natação" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/taekwondo.jpg" alt="taekwondo" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/artesanato.jpg" alt="artesanato" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/fruta.jpeg" alt="crinças com frutas" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/alegria.jpg" alt="manhã alegre" class="img-galeria mb-5 img-fluid"> 
+              </div>
+
+              <div class="col-md-3">
+                <img src="./assets/images/esporte.jpg" alt="esporte" class="img-galeria mb-5 img-fluid"> 
+              </div>
+             
             </div>
           </div>
+
           <div class="tab-pane fade show" id="colaboradores" role="tabpanel" aria-labelledby="colaboradores">
-            <div class="row">
+            <div class="row mt-5">
               <!-- CAJEF  (copie e cole o codigo abaixo para cada nova imagem) -->
               <div class="col-3">
-                <img src="./assets/images/logoexample.png" alt="logo" class="img-parceiros mb-5"> 
+                <img src="./assets/images/logoexample.png" alt="logo" class="img-galeria mb-5"> 
               </div>
             </div>
           </div>
           <div class="tab-pane fade show" id="voluntarios" role="tabpanel" aria-labelledby="voluntarios">
-            <div class="row">
+            <div class="row mt-5">
               <!-- CAJEF  (copie e cole o codigo abaixo para cada nova imagem) -->
               <div class="col-3">
-                <img src="./assets/images/logoexample.png" alt="logo" class="img-parceiros mb-5"> 
+                <img src="./assets/images/logoexample.png" alt="logo" class="img-galeria mb-5"> 
               </div>
             </div>
           </div>
@@ -249,7 +282,7 @@
 
       <div class="row text-center">
         <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/logoexample.png" alt="logo" class="img-parceiros mb-5"> 
+          <img src="./assets/images/hacking_logo.svg" alt="logo" class="img-parceiros mb-5"> 
         </div>
         <div class="col-xs-12 col-md-4">
           <img src="./assets/images/cabofrio.png" alt="logo" class="img-parceiros mb-5"> 
@@ -270,7 +303,7 @@
             esportivas e culturais. O CAJEF, que funciona de doações e da ajuda de voluntários, atende atualmente cerca de 100 crianças com idades
             entre 3 e 16 anos, com objetivo de promover a cidade e vivência de valores no bem.
           </p>
-          <a href="#" class="btn btn-primary ong-red">           
+          <a href="#" class="btn btn-primary ong-red" data-toggle="modal" data-target="#doar">           
             Clique aqui para fazer a sua doação
           </a>
         </div>
@@ -326,21 +359,141 @@
     </section>
   </main>
 
+    
   <footer class="container-full mt-5">
     <div class="row pt-5">
       <div class="social-footer col col-md-2 ml-5">
         <a class="mr-3" href="https://instagram.com/ongcajef?igshid=bnirq3bswtly" target="_blank">
           <i class="fab fa-instagram mr-2"></i>
         </a>
-        <a class="mr-3" href="https://www.facebook.com/ong.cajef" target="_blank">
+        <a class="mr-3" href="https://www.facebook.com/CAJEF-Centro-de-Aten%C3%A7%C3%A3o-ao-Jovem-Espa%C3%A7o-Feliz-106997394374338" target="_blank">
           <i class="fab fa-facebook"></i>
         </a>
       </div>
       <div class="col col-md-2 offset-md-7">
-        <a class="btn btn-primary ong-red" href="#">Quero Doar</a>
+          <a href="#" class="btn btn-primary ong-red" data-toggle="modal" data-target="#doar">Quero Doar</a>
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="doar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="section-modal-title-doe">APOIE NOSSA CAUSA </br> E TRANSFORME VIDAS!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card-text text-left">
+            <p class="pl-3">
+              Ajude-nos a transformar a história de mais de 100 crianças.
+            </p>
+            <form id="contato">
+              <input type="hidden" name="contact_number">
+              <div class="container">
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome:</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome e Sobrenome">
+                </div>
+                
+
+                <div class="row">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">E-mail:</label>
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: maria@email.com.br">
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Telefone:</label>
+                      <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Ex: 22 97125-5423" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">O que você pode doar?</label>
+                  <textarea class="form-control" name="message" rows="2" placeholder="Ex: Alimentos, cesta básica, produtos de higiene..."></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary" id="btn-send" value="Send Email" onclick="sendEmail()">Enviar</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="voluntario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="section-modal-title">SEJA UM VOLUNTÁRIO DO CAJEF</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card-text text-left">
+            <p class="pl-3 pt-0">Para saber sobre as vagas disponíveis para o voluntariado no CAJEF, preencha o formulário abaixo:</p>
+            <form id="contato">
+              <input type="hidden" name="contact_number">
+              <div class="container">
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome:</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome e Sobrenome">
+                </div>
+                
+
+                <div class="row">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">E-mail:</label>
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: maria@email.com.br">
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Telefone:</label>
+                      <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Ex: 22 97125-5423" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Por que razão você deseja se tornar um voluntário?</label>
+                  <textarea class="form-control" name="message" rows="1" placeholder="Sua resposta"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Em que você pode colaborar?</label>
+                  
+                  <textarea class="form-control" name="message" rows="2" placeholder="Comente suas Habilidades e/ou Experiências com trabalho voluntário."></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary" id="btn-send" value="Send Email" onclick="sendEmail()">Enviar</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -352,3 +505,9 @@
 
 </body>
 </html> 
+
+
+
+
+
+
