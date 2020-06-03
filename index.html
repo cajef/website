@@ -380,13 +380,16 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="section-modal-title-doe">APOIE NOSSA <br>CAUSA E TRANSFORME VIDAS!</h5>
+          <h5 class="modal-title" id="section-modal-title-doe">APOIE NOSSA CAUSA </br> E TRANSFORME VIDAS!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <div class="card-text text-left">
+            <p class="pl-3">
+              Ajude-nos a transformar a história de mais de 100 crianças.
+            </p>
             <form id="contato">
               <input type="hidden" name="contact_number">
               <div class="container">
@@ -419,7 +422,7 @@
                   <textarea class="form-control" name="message" rows="2" placeholder="Ex: Alimentos, cesta básica, produtos de higiene..."></textarea>
                 </div>
                 
-                <button type="button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">Enviar</button>
+                <button type="button" class="btn btn-primary" id="btn-send" value="Send Email" onclick="sendEmail()">Enviar</button>
               </div>
             </form>  
           </div>
