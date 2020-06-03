@@ -85,6 +85,7 @@ section h2 {
 }
 
 .ong-red {
+  color: white;
   background-color: var(--red);
   border-color: transparent;
 }
@@ -92,6 +93,7 @@ section h2 {
 .ong-red:hover{
   background-color: var(--red);
   border-color: transparent;
+  color: white;
 }
 
 section {
@@ -152,7 +154,6 @@ div.modal-header {
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  line-height: 49px;
   text-align: center;
   text-transform: uppercase;
   color: #AAD037;
