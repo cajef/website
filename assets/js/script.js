@@ -67,7 +67,7 @@ function sendEmail(id, subject) {
   Host: "smtp.gmail.com",
   Username : 'ong.cajef@gmail.com',
   Password : 'cajef2020',
-  To : 'ong.cajef@gmail.com',
+  To : 'contato@cajefcabofrio.org',
   From : email,
   Subject : subject,
   Body : text,
