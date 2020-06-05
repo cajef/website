@@ -158,35 +158,35 @@
           <div class="tab-pane fade show" id="talentos" role="tabpanel" aria-labelledby="talentos">
             <div class="row mt-5">
               <!-- CAJEF  (copie e cole o codigo abaixo para cada nova imagem) -->
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/luta.jpg" alt="luta" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/crianca.jpg" alt="crianças" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/natacao.jpeg" alt="natação" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/taekwondo.jpg" alt="taekwondo" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/artesanato.jpg" alt="artesanato" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/fruta.jpeg" alt="crinças com frutas" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/alegria.jpg" alt="manhã alegre" class="img-galeria mb-5 img-fluid"> 
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 text-center">
                 <img src="./assets/images/esporte.jpg" alt="esporte" class="img-galeria mb-5 img-fluid"> 
               </div>
              
@@ -296,12 +296,13 @@
             <div class="card-body">
               <div class="card-title">
                 <p>
-                  E-mail:  artevida@bol.com.br
+                  E-mail: contato@cajefcabofrio.org<br>
+                  Telefone: (22) 99943-8989
                 </p>
                 <p>
-                  Rua Erica Ramos , N° 25
-                  CASA - JACARE
-                  - Cabo Frio-Rio de Janeiro,  Brasil
+                  Rua Érica Ramos, N° 25
+                  CASA <br>JACARÉ
+                  - Cabo Frio - Rio de Janeiro,  Brasil
                 </p>  
               </div>
               <div class="card-text text-left">
@@ -339,17 +340,34 @@
 
     
   <footer class="container-full mt-5">
-    <div class="row pt-5">
-      <div class="social-footer col col-md-2 ml-5">
-        <a class="mr-3" href="https://instagram.com/ongcajef?igshid=bnirq3bswtly" target="_blank">
-          <i class="fab fa-instagram mr-2"></i>
-        </a>
-        <a class="mr-3" href="https://www.facebook.com/CAJEF-Centro-de-Aten%C3%A7%C3%A3o-ao-Jovem-Espa%C3%A7o-Feliz-106997394374338" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </div>
-      <div class="col col-md-2 offset-md-7">
+    <div class="container">
+      <div class="row justify-content-between pb-4 pt-5 d-none d-md-flex">
+        <div class="social-footer col-md-3">
+          <a class="mr-3" href="https://instagram.com/ongcajef?igshid=bnirq3bswtly" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="mr-3" href="https://www.facebook.com/CAJEF-Centro-de-Aten%C3%A7%C3%A3o-ao-Jovem-Espa%C3%A7o-Feliz-106997394374338" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col-md-3">
           <a href="#" class="btn btn-primary ong-red" data-toggle="modal" data-target="#doar">Quero Doar</a>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center pb-4 pt-4 d-xs-block d-md-none">
+        <div class="social-footer col-auto">
+          <a class="mr-3" href="https://instagram.com/ongcajef?igshid=bnirq3bswtly" target="_blank">
+            <i class="fab fa-instagram mr-2"></i>
+          </a>
+          <a class="mr-3" href="https://www.facebook.com/CAJEF-Centro-de-Aten%C3%A7%C3%A3o-ao-Jovem-Espa%C3%A7o-Feliz-106997394374338" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col-auto">
+          <a href="#" class="btn btn-primary ong-red" data-toggle="modal" data-target="#doar">Quero Doar</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -358,7 +376,9 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="section-modal-title-doe">APOIE NOSSA CAUSA <br> E TRANSFORME VIDAS!</h5>
+          <div class="container">
+            <h5 class="modal-title" id="section-modal-title-doe">APOIE NOSSA CAUSA <br> E TRANSFORME VIDAS!</h5>
+          </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -371,7 +391,6 @@
             <form id="doacao">
               <input type="hidden" name="contact_number">
               <div class="container">
-                
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nome:</label>
                   <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome e Sobrenome">
@@ -391,7 +410,6 @@
                       <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Ex: 22 97125-5423" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                   </div>
-
                 </div>
                 
                 <div class="form-group">
@@ -414,7 +432,9 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="section-modal-title">SEJA UM VOLUNTÁRIO DO CAJEF</h5>
+          <div class="container">
+            <h5 class="modal-title" id="section-modal-title">SEJA UM VOLUNTÁRIO <br> DO CAJEF</h5>
+          </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -425,7 +445,6 @@
             <form id="volunt">
               <input type="hidden" name="contact_number">
               <div class="container">
-                
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nome:</label>
                   <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome e Sobrenome">
@@ -446,7 +465,6 @@
                       <input type="tel" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Ex: 22 97125-5423" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                   </div>
-
                 </div>
 
                 <div class="form-group">

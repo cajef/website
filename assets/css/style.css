@@ -48,7 +48,7 @@ section h2 {
 }
 
 .logo {
-  width: 4em;
+  height: 3em;
 }
 
 .jumbotron {
@@ -125,7 +125,7 @@ section {
   background: linear-gradient(180deg, #3696C6 6.45%, #40D8CF 145.16%), #229CD7;
   color: white;
   min-height: 10vh;
-  padding:    4em;
+  padding: 4em;
 }
 
 #nos-ajude h1 {
@@ -148,8 +148,6 @@ div.modal-header {
 }
 
 #section-modal-title {
-  width: 603px;
-  height: 20px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 900;
@@ -163,7 +161,6 @@ div.modal-header {
   font-family: Nunito;
   text-align: center;
   font-weight: 900;
-  margin-left: 25%;
   color: #AAD037;
 }
 
@@ -189,7 +186,7 @@ footer i {
 
 @media only screen and (max-width: 830px) {
   .logo {
-    width: 3em;
+    height: 3em;
   }
 
   .jumbotron {
